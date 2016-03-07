@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-        
+
 <!DOCTYPE timetable SYSTEM 'timetable.dtd'>
 <timetable>
     <year>2016</year>
@@ -7,40 +7,30 @@
     <set>4S</set>
     <program>CST</program>
     <days>
-        <day type="mon">
+        <day type="fri">
             <booking>
-                <time>9:30-11:20</time>
-                <room>SW3-4785</room>
+                <time>8:30-10:20</time>
+                <room>SW5-1840</room>
                 <instructor>
                     <name>Catherine Ryan</name>
                 </instructor>
             </booking>
         </day>
 
-        <day type="mon">
+        <day type="fri">
             <booking>
-                <time>11:30-12:20</time>
-                <room>SW1-1205</room>
+                <time>10:30-12:20</time>
+                <room>SE12-308</room>
                 <instructor>
-                    <name>Mirela Gutica</name>
+                    <name>Medhat Elmasry</name>
                 </instructor>
             </booking>
         </day>
 
-        <day type="mon">
+        <day type="fri">
             <booking>
-                <time>12:30-2:20</time>
-                <room>SE12-320</room>
-                <instructor>
-                    <name>Mirela Gutica</name>
-                </instructor>
-            </booking>
-        </day>
-
-        <day type="tues">
-            <booking>
-                <time>11:30-12:20</time>
-                <room>SW5-1850</room>
+                <time>12:30-1:20</time>
+                <room>SW3-1750</room>
                 <instructor>
                     <name>Brenda Fine</name>
                 </instructor>
@@ -49,10 +39,10 @@
 
         <day type="thu">
             <booking>
-                <time>11:30-12:20</time>
-                <room>SW3-1710</room>
+                <time>12:30-11:20</time>
+                <room>SE12-308</room>
                 <instructor>
-                    <name>Mirela Gutica</name>
+                    <name>Medhat Elmasry</name>
                 </instructor>
             </booking>
         </day>
@@ -61,44 +51,32 @@
     <period>
         <timeslot>
             <booking>
-                <time>9:30-11:30</time>
-                <room>SW3-4785</room>
+                <time>8:30-10:20</time>
+                <room>SW5-1840</room>
                 <instructor>
                     <name>Catherine Ryan</name>
                 </instructor>
             </booking>
         </timeslot>
     </period>
-    
+
     <period>
         <timeslot>
             <booking>
-                <time>11:30-12:20</time>
-                <room>SW1-1205</room>
+                <time>10:30-12:20</time>
+                <room>SE12-308</room>
                 <instructor>
-                    <name>Mirela Gutica</name>
+                    <name>Medhat Elmasry</name>
                 </instructor>
             </booking>
         </timeslot>
     </period>
-    
+
     <period>
         <timeslot>
             <booking>
-                <time>12:30-2:20</time>
-                <room>SE12-320</room>
-                <instructor>
-                    <name>Mirela Gutica</name>
-                </instructor>
-            </booking>
-        </timeslot>
-    </period>
-    
-    <period>
-        <timeslot>
-            <booking>
-                <time>11:30-12:20</time>
-                <room>SW5-1850</room>
+                <time>12:30-1:20</time>
+                <room>SW3-1750</room>
                 <instructor>
                     <name>Brenda Fine</name>
                 </instructor>
@@ -109,22 +87,20 @@
     <period>
         <timeslot>
             <booking>
-                <time>11:30-12:20</time>
-                <room>SW3-1710</room>
+                <time>12:30-11:20</time>
+                <room>SE12-308</room>
                 <instructor>
-                    <name>Mirela Gutica</name>
+                    <name>Medhat Elmasry</name>
                 </instructor>
             </booking>
         </timeslot>
     </period>
-
-
 
     <courses>
         <course>
             <booking>
-                <time>9:30-11:30</time>
-                <room>SW3-4785</room>
+                <time>8:30-10:20</time>
+                <room>SW5-1840</room>
                 <instructor>
                     <name>Catherine Ryan</name>
                 </instructor>
@@ -132,17 +108,17 @@
         </course>
         <course>
             <booking>
-                <time>11:30-12:20</time>
-                <room>SW1-1205</room>
+                <time>10:30-12:20</time>
+                <room>SE12-308</room>
                 <instructor>
-                    <name>Mirela Gutica</name>
+                    <name>Medhat Elmasry</name>
                 </instructor>
             </booking>
         </course>
         <course>
             <booking>
-                <time>11:30-12:30</time>
-                <room>SW5-1850</room>
+                <time>12:30-1:20</time>
+                <room>SW3-1750</room>
                 <instructor>
                     <name>Brenda Fine</name>
                 </instructor>
@@ -150,10 +126,10 @@
         </course>
         <course>
             <booking>
-                <time>11:30-12:20</time>
-                <room>SW3-1710</room>
+                <time>12:30-11:20</time>
+                <room>SE12-308</room>
                 <instructor>
-                    <name>Mirela Gutica</name>
+                    <name>Medhat Elmasry</name>
                 </instructor>
             </booking>
         </course>

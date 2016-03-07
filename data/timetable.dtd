@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<!ELEMENT timetable (days, period+, courses?)>
+<!ELEMENT timetable (year, term, set, program, days, period+, courses?)>
 
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT term (#PCDATA)>
+<!ELEMENT set (#PCDATA)>
+<!ELEMENT program (#PCDATA)>
 <!ELEMENT days (day+)>
-<!ELEMENT day (booking)>
+<!ELEMENT day (booking+)>
 <!ATTLIST day
     type (mon|tues|wed|thu|fri) #REQUIRED>
 
