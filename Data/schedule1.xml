@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+        
+<!DOCTYPE timetable SYSTEM 'timetable.dtd'>
+<timetable>
+    <days>
+        <day type="mon">
+            <booking>
+                <time>9:30-11:20</time>
+                <room>SW3-4785</room>
+                <instructor>
+                    <name>Catherine Ryan</name>
+                </instructor>
+            </booking>
+        </day>
+
+        <day type="mon">
+            <booking>
+                <time>11:30-12:20</time>
+                <room>SW1-1205</room>
+                <instructor>
+                    <name>Mirela Gutica</name>
+                </instructor>
+            </booking>
+        </day>
+
+        <day type="mon">
+            <booking>
+                <time>12:30-2:20</time>
+                <room>SE12-320</room>
+                <instructor>
+                    <name>Mirela Gutica</name>
+                </instructor>
+            </booking>
+        </day>
+
+        <day type="tues">
+            <booking>
+                <time>11:30-12:20</time>
+                <room>SW5-1850</room>
+                <instructor>
+                    <name>Brenda Fine</name>
+                </instructor>
+            </booking>
+        </day>
+
+        <day type="thu">
+            <booking>
+                <time>11:30-12:20</time>
+                <room>SW3-1710</room>
+                <instructor>
+                    <name>Mirela Gutica</name>
+                </instructor>
+            </booking>
+        </day>
+    </days>
+
+    <period>
+        <timeslot>
+            <booking>
+                <time>9:30-11:30</time>
+                <room>SW3-4785</room>
+                <instructor>
+                    <name>Catherine Ryan</name>
+                </instructor>
+            </booking>
+        </timeslot>
+    </period>
+    
+    <period>
+        <timeslot>
+            <booking>
+                <time>11:30-12:20</time>
+                <room>SW1-1205</room>
+                <instructor>
+                    <name>Mirela Gutica</name>
+                </instructor>
+            </booking>
+        </timeslot>
+    </period>
+    
+    <period>
+        <timeslot>
+            <booking>
+                <time>12:30-2:20</time>
+                <room>SE12-320</room>
+                <instructor>
+                    <name>Mirela Gutica</name>
+                </instructor>
+            </booking>
+        </timeslot>
+    </period>
+    
+    <period>
+        <timeslot>
+            <booking>
+                <time>11:30-12:20</time>
+                <room>SW5-1850</room>
+                <instructor>
+                    <name>Brenda Fine</name>
+                </instructor>
+            </booking>
+        </timeslot>
+    </period>
+
+    <period>
+        <timeslot>
+            <booking>
+                <time>11:30-12:20</time>
+                <room>SW3-1710</room>
+                <instructor>
+                    <name>Mirela Gutica</name>
+                </instructor>
+            </booking>
+        </timeslot>
+    </period>
+
+
+
+    <courses>
+        <course>
+            <booking>
+                <time>9:30-11:30</time>
+                <room>SW3-4785</room>
+                <instructor>
+                    <name>Catherine Ryan</name>
+                </instructor>
+            </booking>
+        </course>
+        <course>
+            <booking>
+                <time>11:30-12:20</time>
+                <room>SW1-1205</room>
+                <instructor>
+                    <name>Mirela Gutica</name>
+                </instructor>
+            </booking>
+        </course>
+        <course>
+            <booking>
+                <time>11:30-12:30</time>
+                <room>SW5-1850</room>
+                <instructor>
+                    <name>Brenda Fine</name>
+                </instructor>
+            </booking>
+        </course>
+        <course>
+            <booking>
+                <time>11:30-12:20</time>
+                <room>SW3-1710</room>
+                <instructor>
+                    <name>Mirela Gutica</name>
+                </instructor>
+            </booking>
+        </course>
+    </courses>
+
+
+</timetable>

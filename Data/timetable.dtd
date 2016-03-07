@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!ELEMENT timetable (days, period+, courses?)>
+
+<!ELEMENT days (day+)>
+<!ELEMENT day (booking)>
+<!ATTLIST day
+    type (mon|tues|wed|thu|fri) #REQUIRED>
+
+
+<!ELEMENT courses (course+)>
+<!ELEMENT course (booking)>
+
+
+<!ELEMENT period (timeslot)>
+<!ELEMENT timeslot (booking)>
+<!ELEMENT booking (time, room, instructor)>
+
+<!ELEMENT room (#PCDATA)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT instructor (name)>
+<!ELEMENT name (#PCDATA)>
