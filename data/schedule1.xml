@@ -6,158 +6,124 @@
     <term>Winter</term>
     <set>4S</set>
     <program>CST</program>
+    <!-- days -->
     <days>
-        <day type="mon">
-            <booking>
-                <time>9:30-11:20</time>
-                <room>SW3-4785</room>
-                <instructor>
-                    <name>Catherine Ryan</name>
-                </instructor>
+        <day type="Monday">
+            <booking period="8:30-9:30" course="BLAW3600">
+                <instructor>Catherine Ryan</instructor>
+            </booking>
+            <booking period="9:30-10:30" course="BLAW3600">
+                <instructor>Catherine Ryan</instructor>
             </booking>
         </day>
-
-        <day type="mon">
-            <booking>
-                <time>11:30-12:20</time>
-                <room>SW1-1205</room>
-                <instructor>
-                    <name>Mirela Gutica</name>
-                </instructor>
+        <day type="Tuesday">
+            <booking period="8:30-9:30" course="BLAW3600">
+                <instructor>Catherine Ryan</instructor>
+            </booking>
+            <booking period="9:30-10:30" course="BLAW3600">
+                <instructor>Catherine Ryan</instructor>
             </booking>
         </day>
-
-        <day type="mon">
-            <booking>
-                <time>12:30-2:20</time>
-                <room>SE12-320</room>
-                <instructor>
-                    <name>Mirela Gutica</name>
-                </instructor>
+        <day type="Wednesday">
+            <booking period="8:30-9:30" course="BLAW3600">
+                <instructor>Catherine Ryan</instructor>
+            </booking>
+            <booking period="9:30-10:30" course="BLAW3600">
+                <instructor>Catherine Ryan</instructor>
             </booking>
         </day>
-
-        <day type="tues">
-            <booking>
-                <time>11:30-12:20</time>
-                <room>SW5-1850</room>
-                <instructor>
-                    <name>Brenda Fine</name>
-                </instructor>
+        <day type="Thursday">
+            <booking period="8:30-9:30" course="BLAW3600">
+                <instructor>Catherine Ryan</instructor>
+            </booking>
+            <booking period="9:30-10:30" course="BLAW3600">
+                <instructor>Catherine Ryan</instructor>
             </booking>
         </day>
-
-        <day type="thu">
-            <booking>
-                <time>11:30-12:20</time>
-                <room>SW3-1710</room>
-                <instructor>
-                    <name>Mirela Gutica</name>
-                </instructor>
+        <day type="Friday">
+            <booking period="8:30-9:30" course="BLAW3600">
+                <instructor>Catherine Ryan</instructor>
+            </booking>
+            <booking period="9:30-10:30" course="BLAW3600">
+                <instructor>Catherine Ryan</instructor>
             </booking>
         </day>
     </days>
 
-    <period>
-        <timeslot>
-            <booking>
-                <time>9:30-11:30</time>
-                <room>SW3-4785</room>
-                <instructor>
-                    <name>Catherine Ryan</name>
-                </instructor>
+    <!-- periods -->
+    <periods>
+        <period type="8:30-9:30">
+            <booking day="Monday" course="BLAW3600">
+                <instructor>Catherine Ryan</instructor>
             </booking>
-        </timeslot>
-    </period>
-    
-    <period>
-        <timeslot>
-            <booking>
-                <time>11:30-12:20</time>
-                <room>SW1-1205</room>
-                <instructor>
-                    <name>Mirela Gutica</name>
-                </instructor>
+            <booking day="Tuesday" course="BLAW3600">
+                <instructor>Catherine Ryan</instructor>
             </booking>
-        </timeslot>
-    </period>
-    
-    <period>
-        <timeslot>
-            <booking>
-                <time>12:30-2:20</time>
-                <room>SE12-320</room>
-                <instructor>
-                    <name>Mirela Gutica</name>
-                </instructor>
+        </period>
+        <period type="9:30-10:30">
+            <booking day="Monday" course="BLAW3600">
+                <instructor>Catherine Ryan</instructor>
             </booking>
-        </timeslot>
-    </period>
-    
-    <period>
-        <timeslot>
-            <booking>
-                <time>11:30-12:20</time>
-                <room>SW5-1850</room>
-                <instructor>
-                    <name>Brenda Fine</name>
-                </instructor>
+            <booking day="Tuesday" course="BLAW3600">
+                <instructor>Catherine Ryan</instructor>
             </booking>
-        </timeslot>
-    </period>
-
-    <period>
-        <timeslot>
-            <booking>
-                <time>11:30-12:20</time>
-                <room>SW3-1710</room>
-                <instructor>
-                    <name>Mirela Gutica</name>
-                </instructor>
+        </period>
+        <period type="10:30-11:30">
+            <booking day="Monday" course="BLAW3600">
+                <instructor>Catherine Ryan</instructor>
             </booking>
-        </timeslot>
-    </period>
-
-
-
+            <booking day="Tuesday" course="BLAW3600">
+                <instructor>Catherine Ryan</instructor>
+            </booking>
+        </period>
+        <period type="11:30-12:30">
+            <booking day="Monday" course="BLAW3600">
+                <instructor>Catherine Ryan</instructor>
+            </booking>
+            <booking day="Tuesday" course="BLAW3600">
+                <instructor>Catherine Ryan</instructor>
+            </booking>
+        </period>
+        <period type="12:30-13:30">
+            <booking day="Monday" course="BLAW3600">
+                <instructor>Catherine Ryan</instructor>
+            </booking>
+            <booking day="Tuesday" course="BLAW3600">
+                <instructor>Catherine Ryan</instructor>
+            </booking>
+        </period>
+    </periods>
+    <!-- courses-->
     <courses>
-        <course>
-            <booking>
-                <time>9:30-11:30</time>
-                <room>SW3-4785</room>
-                <instructor>
-                    <name>Catherine Ryan</name>
-                </instructor>
+        <course type="BLAW3600">
+            <booking day="Monday" period="8:30-9:30">
+                <instructor>Catherine Ryan</instructor>
             </booking>
         </course>
-        <course>
-            <booking>
-                <time>11:30-12:20</time>
-                <room>SW1-1205</room>
-                <instructor>
-                    <name>Mirela Gutica</name>
-                </instructor>
+        <course type="COMP4560">
+            <booking day="Tuesday" period="8:30-9:30">
+                <instructor>Catherine Ryan</instructor>
             </booking>
         </course>
-        <course>
-            <booking>
-                <time>11:30-12:30</time>
-                <room>SW5-1850</room>
-                <instructor>
-                    <name>Brenda Fine</name>
-                </instructor>
+        <course type="COMP4711">
+            <booking day="Wednesday" period="8:30-9:30">
+                <instructor>Catherine Ryan</instructor>
             </booking>
         </course>
-        <course>
-            <booking>
-                <time>11:30-12:20</time>
-                <room>SW3-1710</room>
-                <instructor>
-                    <name>Mirela Gutica</name>
-                </instructor>
+        <course type="COMP4735">
+            <booking day="Thursday" period="8:30-9:30">
+                <instructor>Catherine Ryan</instructor>
+            </booking>
+        </course>
+        <course type="COMP4976">
+            <booking day="Friday" period="8:30-9:30">
+                <instructor>Catherine Ryan</instructor>
+            </booking>
+        </course>
+        <course type="COMP4977">
+            <booking day="Friday" period="9:30-10:30">
+                <instructor>Catherine Ryan</instructor>
             </booking>
         </course>
     </courses>
-
-
 </timetable>
