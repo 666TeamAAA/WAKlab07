@@ -17,7 +17,7 @@
 <!ELEMENT periods (period+)>
 <!ELEMENT period (booking+)>
 <!ATTLIST period
-        type (8:30-9:30|9:30-10:30|10:30-11:30|11:30-12:30|12:30-13:30|13:30-14:30|14:30-15:30|15:30-16:30|16:30-17:30) #REQUIRED>
+        type (8:30-9:30|8:30-10:30|9:30-11:30|9:30-10:30|10:30-11:30|11:30-12:30|12:30-13:30|13:30-14:30|14:30-15:30|15:30-16:30|16:30-17:30) #REQUIRED>
 
 <!-- Courses constraints -->
 <!ELEMENT courses (course+)>
@@ -30,6 +30,6 @@
 <!ELEMENT instructor (#PCDATA)>
 <!ATTLIST booking
         day (Monday|Tuesday|Wednesday|Thursday|Friday) #IMPLIED
-        period (8:30-9:30|9:30-10:30|10:30-11:30|11:30-12:30|12:30-13:30|13:30-14:30|14:30-15:30|15:30-16:30|16:30-17:30) #IMPLIED
+        period (8:30-9:30|8:30-10:30|9:30-11:30|9:30-10:30|10:30-11:30|11:30-12:30|12:30-13:30|12:30-14:30|13:30-14:30|14:30-15:30|15:30-16:30|16:30-17:30) #IMPLIED
         course (BLAW3600|COMP4560|COMP4711|COMP4735|COMP4976|COMP4977) #IMPLIED
         >
