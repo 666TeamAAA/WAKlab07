@@ -9,87 +9,29 @@
     <!-- days -->
     <days>
         <day type="Monday">
-            <booking period="8:30-9:30" course="BLAW3600">
+            <booking period="9:30-11:30" course="BLAW3600">
                 <instructor>Catherine Ryan</instructor>
             </booking>
-            <booking period="9:30-10:30" course="BLAW3600">
-                <instructor>Catherine Ryan</instructor>
+            <booking period="11:30-12:30" course="COMP4735">
+                <instructor>Mirela Gutica</instructor>
             </booking>
-        </day>
-        <day type="Tuesday">
-            <booking period="8:30-9:30" course="BLAW3600">
-                <instructor>Catherine Ryan</instructor>
-            </booking>
-            <booking period="9:30-10:30" course="BLAW3600">
-                <instructor>Catherine Ryan</instructor>
-            </booking>
-        </day>
-        <day type="Wednesday">
-            <booking period="8:30-9:30" course="BLAW3600">
-                <instructor>Catherine Ryan</instructor>
-            </booking>
-            <booking period="9:30-10:30" course="BLAW3600">
-                <instructor>Catherine Ryan</instructor>
-            </booking>
-        </day>
-        <day type="Thursday">
-            <booking period="8:30-9:30" course="BLAW3600">
-                <instructor>Catherine Ryan</instructor>
-            </booking>
-            <booking period="9:30-10:30" course="BLAW3600">
-                <instructor>Catherine Ryan</instructor>
-            </booking>
-        </day>
-        <day type="Friday">
-            <booking period="8:30-9:30" course="BLAW3600">
-                <instructor>Catherine Ryan</instructor>
-            </booking>
-            <booking period="9:30-10:30" course="BLAW3600">
-                <instructor>Catherine Ryan</instructor>
+            <booking period="12:30-14:30" course="COMP4735">
+                <instructor>Mirela Gutica</instructor>
             </booking>
         </day>
     </days>
 
     <!-- periods -->
     <periods>
-        <period type="8:30-9:30">
-            <booking day="Monday" course="BLAW3600">
-                <instructor>Catherine Ryan</instructor>
-            </booking>
-            <booking day="Tuesday" course="BLAW3600">
-                <instructor>Catherine Ryan</instructor>
-            </booking>
-        </period>
-        <period type="9:30-10:30">
-            <booking day="Monday" course="BLAW3600">
-                <instructor>Catherine Ryan</instructor>
-            </booking>
-            <booking day="Tuesday" course="BLAW3600">
-                <instructor>Catherine Ryan</instructor>
-            </booking>
-        </period>
-        <period type="10:30-11:30">
-            <booking day="Monday" course="BLAW3600">
-                <instructor>Catherine Ryan</instructor>
-            </booking>
-            <booking day="Tuesday" course="BLAW3600">
-                <instructor>Catherine Ryan</instructor>
-            </booking>
-        </period>
         <period type="11:30-12:30">
-            <booking day="Monday" course="BLAW3600">
-                <instructor>Catherine Ryan</instructor>
+            <booking day="Monday" course="COMP4735">
+                <instructor>Mirela Gutica</instructor>
             </booking>
-            <booking day="Tuesday" course="BLAW3600">
-                <instructor>Catherine Ryan</instructor>
+            <booking day="Tuesday" course="COMP4560">
+                <instructor>Brenda Fine</instructor>
             </booking>
-        </period>
-        <period type="12:30-13:30">
-            <booking day="Monday" course="BLAW3600">
-                <instructor>Catherine Ryan</instructor>
-            </booking>
-            <booking day="Tuesday" course="BLAW3600">
-                <instructor>Catherine Ryan</instructor>
+            <booking day="Thursday" course="COMP4735">
+                <instructor>Mirela Gutica</instructor>
             </booking>
         </period>
     </periods>
@@ -99,29 +41,7 @@
             <booking day="Monday" period="8:30-9:30">
                 <instructor>Catherine Ryan</instructor>
             </booking>
-        </course>
-        <course type="COMP4560">
-            <booking day="Tuesday" period="8:30-9:30">
-                <instructor>Catherine Ryan</instructor>
-            </booking>
-        </course>
-        <course type="COMP4711">
-            <booking day="Wednesday" period="8:30-9:30">
-                <instructor>Catherine Ryan</instructor>
-            </booking>
-        </course>
-        <course type="COMP4735">
-            <booking day="Thursday" period="8:30-9:30">
-                <instructor>Catherine Ryan</instructor>
-            </booking>
-        </course>
-        <course type="COMP4976">
-            <booking day="Friday" period="8:30-9:30">
-                <instructor>Catherine Ryan</instructor>
-            </booking>
-        </course>
-        <course type="COMP4977">
-            <booking day="Friday" period="9:30-10:30">
+            <booking day="Friday" period="8:30-10:30">
                 <instructor>Catherine Ryan</instructor>
             </booking>
         </course>
