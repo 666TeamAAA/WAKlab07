@@ -1,6 +1,8 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-
+// location of data folders
+define('DATAPATH', './data/');
+define('XMLSUFFIX', '.xm');
 /*
 |--------------------------------------------------------------------------
 | Display Debug backtrace
