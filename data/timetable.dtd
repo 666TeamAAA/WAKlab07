@@ -1,26 +1,35 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE>
+<!-- Schedule constraints -->
+<!ELEMENT timetable (year, term, set, program, days, periods, courses)>
+<!ELEMENT year      (#PCDATA)>
+<!ELEMENT term      (#PCDATA)>
+<!ELEMENT set       (#PCDATA)>
+<!ELEMENT program   (#PCDATA)>
 
-<!ELEMENT timetable (year, term, set, program, days, period+, courses?)>
-
-<!ELEMENT year (#PCDATA)>
-<!ELEMENT term (#PCDATA)>
-<!ELEMENT set (#PCDATA)>
-<!ELEMENT program (#PCDATA)>
+<!-- Days constraints -->
 <!ELEMENT days (day+)>
 <!ELEMENT day (booking+)>
 <!ATTLIST day
-    type (mon|tues|wed|thu|fri) #REQUIRED>
+        type (Monday|Tuesday|Wednesday|Thursday|Friday) #REQUIRED>
 
+<!-- Periods constraints -->
+<!ELEMENT periods (period+)>
+<!ELEMENT period (booking+)>
+<!ATTLIST period
+        type (8:30-9:30|9:30-10:30|10:30-11:30|11:30-12:30|12:30-13:30|13:30-14:30|14:30-15:30|15:30-16:30|16:30-17:30) #REQUIRED>
 
+<!-- Courses constraints -->
 <!ELEMENT courses (course+)>
-<!ELEMENT course (booking)>
+<!ELEMENT course (booking+)>
+<!ATTLIST course
+        type (BLAW3600|COMP4560|COMP4711|COMP4735|COMP4976|COMP4977) #REQUIRED>
 
-
-<!ELEMENT period (timeslot)>
-<!ELEMENT timeslot (booking)>
-<!ELEMENT booking (time, room, instructor)>
-
-<!ELEMENT room (#PCDATA)>
-<!ELEMENT time (#PCDATA)>
-<!ELEMENT instructor (name)>
-<!ELEMENT name (#PCDATA)>
+<!-- Booking constraints -->
+<!ELEMENT booking (instructor?)>
+<!ELEMENT instructor (#PCDATA)>
+<!ATTLIST booking
+        day (Monday|Tuesday|Wednesday|Thursday|Friday) #IMPLIED
+        period (8:30-9:30|9:30-10:30|10:30-11:30|11:30-12:30|12:30-13:30|13:30-14:30|14:30-15:30|15:30-16:30|16:30-17:30) #IMPLIED
+        course (BLAW3600|COMP4560|COMP4711|COMP4735|COMP4976|COMP4977) #IMPLIED
+        >
