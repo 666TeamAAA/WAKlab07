@@ -2,50 +2,28 @@
 
 class Timetable extends CI_Model
 {
-    protected $xml = null;
-    protected $something = array();
+    protected $xml          = null;
+    protected $year         = null;
+    protected $term         = null;
+    protected $set          = null;
+    protected $program      = null;
+    protected $days         = array();
+    protected $periods      = array();
+    protected $courses      = array();
 
     public function __construct()
     {
         parent::__construct();
-        $this->xml = simplexml_load_file(DATAPATH, 'timetable.xml');
+        $this->xml = simplexml_load_file(DATAPATH, 'schedule1.xml');
 
-        // approach 1
-        foreach($this->xml->patties->patty as $something)
+        foreach($this->xml->days->day as $day)
         {
-            $this->patty_name[(string) $something['code']] = (string) $something;
+            $record             = new stdClass();
+            $record->day        = (string) $day->datatype;  /////?????
+            $record->time       = (string) $day->booking['time'];
+            $record->room       = (string) $day->booking['room'];
+            $record->instructor = (string) $day->booking->instructor['name'];
+            $this->days[$record->day] = $record;
         }
     }
-    /**
-    public $code;
-    public $name;
-    public $category;
-    public $value;
-
-    public function __construct()
-    {
-        // Call the CI_Model constructor
-        parent::__construct();
-    }
-
-    public function get_all(){
-        $query = $this->db->get('transactions');
-        return $query->result();
-    }
-
-    public function get_player_stock($name)
-    {
-        $sql = 'SELECT * FROM holdings WHERE player = ?;';
-        $query = $this->db->query($sql, array($name));
-
-        return $query->result();
-    }
-
-    public function get_player_history($name)
-    {
-        $sql = 'SELECT * FROM transactions WHERE player = ?;';
-        $query = $this->db->query($sql, array($name));
-
-        return $query->result();
-    }**/
 }
