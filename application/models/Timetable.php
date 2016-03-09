@@ -1,7 +1,21 @@
 <?php
 
-class Timetable
+class Timetable extends CI_Model
 {
+    protected $xml = null;
+    protected $something = array();
+
+    public function __construct()
+    {
+        parent::__construct();
+        $this->xml = simplexml_load_file(DATAPATH, 'timetable.xml');
+
+        // approach 1
+        foreach($this->xml->patties->patty as $something)
+        {
+            $this->patty_name[(string) $something['code']] = (string) $something;
+        }
+    }
     /**
     public $code;
     public $name;
