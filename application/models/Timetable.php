@@ -1,7 +1,4 @@
 <?php
-
-
-
 class Timetable extends CI_Model
 {
     protected $xml = null;
@@ -17,8 +14,7 @@ class Timetable extends CI_Model
         $this->initCourse();
         $this->initPeriod();
     }
-
-    function initDay(){
+    public function initDay(){
         foreach($this->xml->days->day as $day) {
             $day = (string) $day["type"];
             foreach($day->booking as $booking){
