@@ -4,35 +4,38 @@
 <timetable set="4S" term="Winter 2016">
     <days>
         <day type="mon">
-            <booking instructor="Catherine Ryan" room="SW3 4785" bookingtype="Lab" timeslot="930"  coursename="BLAW 3600"/>
-            <booking instructor="Mirela Gutica"  room="SW1 1205" bookingtype="Lec" timeslot="1130" coursename="COMP 4735"/>
-            <booking instructor="Mirela Gutica"  room="SE12 320" bookingtype="Lab" timeslot="1230" coursename="COMP 4735"/>
+            <booking instructor="Catherine Ryan" room="SW3 4785" bookingtype="Lab" timeslot="9:30"  coursename="BLAW 3600"/>
+            <booking instructor="Mirela Gutica"  room="SW1 1205" bookingtype="Lec" timeslot="11:30" coursename="COMP 4735"/>
+            <booking instructor="Mirela Gutica"  room="SE12 320" bookingtype="Lab" timeslot="12:30" coursename="COMP 4735"/>
         </day>
         <day type="tue">
-            <booking instructor="D`arcy Smith" room="SE12 325" bookingtype="Lab" timeslot="830"  coursename="COMP 4977"/>
-            <booking instructor="Brenda Fine"  room="SW5 1850" bookingtype="Lec" timeslot="1130" coursename="COMP 4560"/>
-            <booking instructor="James Parry"  room="SW5 1840" bookingtype="Lec" timeslot="1430" coursename="COMP 4711"/>
-            <booking instructor="Joseph Lo"    room="SE12 322" bookingtype="Lab" timeslot="1530" coursename="COMP 4560"/>
+            <booking instructor="D`arcy Smith" room="SE12 325" bookingtype="Lab" timeslot="8:30"  coursename="COMP 4977"/>
+            <booking instructor="Brenda Fine"  room="SW5 1850" bookingtype="Lec" timeslot="11:30" coursename="COMP 4560"/>
+            <booking instructor="James Parry"  room="SW5 1840" bookingtype="Lec" timeslot="14:30" coursename="COMP 4711"/>
+            <booking instructor="Joseph Lo"    room="SE12 322" bookingtype="Lab" timeslot="15:30" coursename="COMP 4560"/>
         </day>
         <day type="thu">
-            <booking instructor="Medhat Elmasry" room="SE12 308" bookingtype="Sem" timeslot="830"  coursename="COMP 4976"/>
-            <booking instructor="Mirela Gutica"  room="SW3 1750" bookingtype="Lec" timeslot="1130" coursename="COMP 4735"/>
-            <booking instructor="Medhat Elmasry" room="SE12 308" bookingtype="Sem" timeslot="1230" coursename="COMP 4976"/>
+            <booking instructor="Medhat Elmasry" room="SE12 308" bookingtype="Sem" timeslot="8:30"  coursename="COMP 4976"/>
+            <booking instructor="Mirela Gutica"  room="SW3 1750" bookingtype="Lec" timeslot="11:30" coursename="COMP 4735"/>
+            <booking instructor="Medhat Elmasry" room="SE12 308" bookingtype="Sem" timeslot="12:30" coursename="COMP 4976"/>
         </day>
     </days>
 
     <periods>
-        <period time="830">
+        <period time="8:30">
             <booking instructor="D`arcy Smith"   room="SE12 325" bookingtype="Sem" dayofweek="tue" coursename="COMP 4977"/>
             <booking instructor="Medhat Elmasry" room="SE12 308" bookingtype="Sem" dayofweek="thu" coursename="COMP 4976"/>
             <booking instructor="Catherine Ryan" room="SW5 1840" bookingtype="Lec" dayofweek="fri" coursename="BLAW 3600"/>
         </period>
-        <period time="1130">
+        <period time="9:30">
+            <booking instructor="Catherine Ryan" room="SW3 4785" bookingtype="Lab" dayofweek="mon"  coursename="BLAW 3600"/>
+        </period>
+        <period time="11:30">
             <booking instructor="Mirela Gutica" room="SW1 1205" bookingtype="Lec" dayofweek="mon" coursename="COMP 4735"/>
             <booking instructor="Brenda Fine"   room="SW5 1850" bookingtype="Lec" dayofweek="tue" coursename="COMP 4560"/>
             <booking instructor="Mierla Gutica" room="SW3 1710" bookingtype="Lec" dayofweek="thu" coursename="COMP 4735"/>
         </period>
-        <period time="1230">
+        <period time="12:30">
             <booking instructor="Mierla Gutica"  room="SE12 320" bookingtype="Lab" dayofweek="mon" coursename="COMP 4735"/>
             <booking instructor="Medhat Elmasry" room="SE12 308" bookingtype="Sem" dayofweek="thu" coursename="COMP 4976"/>
             <booking instructor="Brenda Fine"    room="SW3 1750" bookingtype="Lec" dayofweek="fri" coursename="COMP 4560"/>
@@ -42,30 +45,30 @@
     <courses>
         <!-- Monday -->
         <course code="BLAW 3600">
-            <booking instructor="Catherine Ryan" room="SW3 4785" bookingtype="Lab" timeslot="930" dayofweek="mon"/>
+            <booking instructor="Catherine Ryan" room="SW3 4785" bookingtype="Lab" timeslot="9:30" dayofweek="mon"/>
         </course>
         <course code="COMP 4735">
-            <booking instructor="Mirela Gutica"  room="SW1 1205" bookingtype="Lec" timeslot="1130" dayofweek="mon"/>
+            <booking instructor="Mirela Gutica"  room="SW1 1205" bookingtype="Lec" timeslot="11:30" dayofweek="mon"/>
         </course>
         <course code="COMP 4735">
-            <booking instructor="Mirela Gutica"  room="SE12 320" bookingtype="Lab" timeslot="1230" dayofweek="mon"/>
+            <booking instructor="Mirela Gutica"  room="SE12 320" bookingtype="Lab" timeslot="12:30" dayofweek="mon"/>
         </course>
         <!-- Tuesday -->
         <course code="COMP 4977">
-            <booking instructor="D`arcy Smith" room="SE12 325" bookingtype="Sem" timeslot="830" dayofweek="tue"/>
+            <booking instructor="D`arcy Smith" room="SE12 325" bookingtype="Sem" timeslot="8:30" dayofweek="tue"/>
         </course>
         <course code="COMP 4560">
-            <booking instructor="Brenda Fine"  room="SW5 1850" bookingtype="Lec" timeslot="1130" dayofweek="tue"/>
+            <booking instructor="Brenda Fine"  room="SW5 1850" bookingtype="Lec" timeslot="11:30" dayofweek="tue"/>
         </course>
         <course code="COMP 4711">
-            <booking instructor="James Parry"  room="SW5 1850" bookingtype="Lec" timeslot="1430" dayofweek="tue"/>
+            <booking instructor="James Parry"  room="SW5 1850" bookingtype="Lec" timeslot="14:30" dayofweek="tue"/>
         </course>
         <course code="COMP 4560">
-            <booking instructor="Joseph Lo"    room="SE12 322" bookingtype="Lab" timeslot="1530" dayofweek="tue"/>
+            <booking instructor="Joseph Lo"    room="SE12 322" bookingtype="Lab" timeslot="15:30" dayofweek="tue"/>
         </course>
         <!-- Thursday -->
         <course code="COMP 4976">
-            <booking instructor="Medhat Elmasry" room="SE12 308" bookingtype="Sem" timeslot="830" dayofweek="thu"/>
+            <booking instructor="Medhat Elmasry" room="SE12 308" bookingtype="Sem" timeslot="8:30" dayofweek="thu"/>
         </course>
     </courses>
 </timetable>

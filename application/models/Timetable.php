@@ -85,16 +85,16 @@ class Timetable extends CI_Model
      */
     public function getTimeSlot(){
         return array (
-            "8:30" => "8:30 to 10:20",
-            "9:30" => "9:30 to 11:20",
-            "10:30" => "10:30 to 12:20",
-            "11:30" => "11:30 to 12:20",
-            "12:30" => "12:30 to 14:20",
-            "14:30" => "14:30 to 15:20",
-            "15:30" => "15:30 to 17:20",
-            "13:30" => "13:30 to 14:20",
-            "12:30" => "12:30 to 13:20",
-            "14:30" => "14:30 to 17:20"
+            "8:30" => "8:30",
+            "9:30" => "9:30",
+            "10:30" => "10:30",
+            "11:30" => "11:30",
+            "12:30" => "12:30",
+            "14:30" => "14:30",
+            "15:30" => "15:30",
+            "13:30" => "13:30",
+            "12:30" => "12:30",
+            "14:30" => "14:30"
         );
     }
 
@@ -105,15 +105,22 @@ class Timetable extends CI_Model
      * @return booking object for that day at that time
      */
     public function searchDays($dayOfWeek,$chosenTimeslot){
-        foreach($this->courses as $book){
-            if($book->dayofweek == $dayOfWeek && $book->timeslot == $chosenTimeslot){
+        foreach($this->days as $book){
+            if($book->day == $dayOfWeek && $book->time == $chosenTimeslot){
                 return $book;
             }
         }
     }
     public function searchPeriods($dayOfWeek,$chosenTimeslot){
         foreach($this->periods as $book){
-            if($book->timeslot == $chosenTimeslot && $book->day == $dayOfWeek){
+            if($book->time == $chosenTimeslot && $book->day == $dayOfWeek){
+                return $book;
+            }
+        }
+    }
+    public function searchCourses($dayOfWeek,$chosenTimeslot){
+        foreach($this->courses as $book){
+            if($book->time == $chosenTimeslot && $book->day == $dayOfWeek){
                 return $book;
             }
         }
