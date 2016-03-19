@@ -9,21 +9,21 @@ class Timetable extends CI_Model
     public function __construct()
     {
         parent::__construct();
-        $this->xml = simplexml_load_file(DATAPATH, '/schedule1.xml');
+        $this->xml = simplexml_load_file(DATAPATH . '/schedule1.xml');
         $this->initDay();
         $this->initCourse();
         $this->initPeriod();
     }
     public function initDay(){
         foreach($this->xml->days->day as $day) {
-            $day = (string) $day["type"];
+            $currentDay = (string) $day["type"];
             foreach($day->booking as $booking){
                 $room = (string) $booking["room"];
                 $time = (string) $booking["timeslot"];
                 $instructor = (string) $booking["instructor"];
                 $type = (string)$booking ["bookingtype"];
                 $course = (string)$booking["coursename"];
-                $this->days[] = new Booking($instructor,$room,$type,$time, $course,$day);
+                $this->days[] = new Booking($instructor,$room,$type,$time, $course,$currentDay);
             }
         }
     }
@@ -36,7 +36,8 @@ class Timetable extends CI_Model
                 $room = (string)$book["room"];
                 $type = (string)$book["bookingtype"];
                 $day = (string)$book["dayofweek"];
-                $this->courses[] = new Booking($instructor,$room,$type,$courseCode,$day);
+                $time = (string) $book["timeslot"];
+                $this->courses[] = new Booking($instructor,$room,$type,$time, $courseCode,$day);
             }
         }
     }

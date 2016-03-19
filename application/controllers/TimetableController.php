@@ -12,7 +12,7 @@ class TimetableController extends Application {
         $this->data["periods"] = $this->Timetable->getPeriods();
 
         $this->data['daysSearch'] = form_dropdown('day', $this->Timetable->getDaysOfWeek());
-        $this->data['periodSearch'] = form_dropdown('period', $this->Timetable->getListOfPeriods());
+        $this->data['periodSearch'] = form_dropdown('period', $this->Timetable->getPeriods());
 
         $this->render();
     }
