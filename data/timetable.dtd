@@ -6,6 +6,8 @@
 <!ELEMENT term (#PCDATA)>
 <!ELEMENT set (#PCDATA)>
 <!ELEMENT program (#PCDATA)>
+
+
 <!ELEMENT days (day+)>
 <!ELEMENT day (booking+)>
 <!ATTLIST day
@@ -16,7 +18,7 @@
 <!ELEMENT course (booking)>
 
 
-<!ELEMENT period (timeslot)>
+<!ELEMENT period (timeslot+)>
 <!ELEMENT timeslot (booking)>
 <!ELEMENT booking (time, room, instructor)>
 

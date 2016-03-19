@@ -15,9 +15,6 @@
                     <name>Catherine Ryan</name>
                 </instructor>
             </booking>
-        </day>
-
-        <day type="mon">
             <booking>
                 <time>11:30-12:20</time>
                 <room>SW1-1205</room>
@@ -25,9 +22,6 @@
                     <name>Mirela Gutica</name>
                 </instructor>
             </booking>
-        </day>
-
-        <day type="mon">
             <booking>
                 <time>12:30-2:20</time>
                 <room>SE12-320</room>
@@ -36,7 +30,6 @@
                 </instructor>
             </booking>
         </day>
-
         <day type="tues">
             <booking>
                 <time>11:30-12:20</time>
@@ -68,9 +61,6 @@
                 </instructor>
             </booking>
         </timeslot>
-    </period>
-    
-    <period>
         <timeslot>
             <booking>
                 <time>11:30-12:20</time>
@@ -80,9 +70,6 @@
                 </instructor>
             </booking>
         </timeslot>
-    </period>
-    
-    <period>
         <timeslot>
             <booking>
                 <time>12:30-2:20</time>
@@ -92,9 +79,6 @@
                 </instructor>
             </booking>
         </timeslot>
-    </period>
-    
-    <period>
         <timeslot>
             <booking>
                 <time>11:30-12:20</time>
@@ -104,9 +88,6 @@
                 </instructor>
             </booking>
         </timeslot>
-    </period>
-
-    <period>
         <timeslot>
             <booking>
                 <time>11:30-12:20</time>
@@ -117,7 +98,6 @@
             </booking>
         </timeslot>
     </period>
-
 
 
     <courses>
