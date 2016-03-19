@@ -1,5 +1,7 @@
 <?php
 
+
+
 class Timetable extends CI_Model
 {
     protected $xml          = null;

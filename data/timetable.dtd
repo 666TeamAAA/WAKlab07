@@ -1,35 +1,41 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Root Element -->
+<!ELEMENT timetable (days, periods, courses) >
+<!ATTLIST timetable
+        set  CDATA #REQUIRED
+        term CDATA #REQUIRED
+        >
 
-<!-- Schedule constraints -->
-<!ELEMENT timetable (year, term, set, program, days, periods, courses)>
-<!ELEMENT year      (#PCDATA)>
-<!ELEMENT term      (#PCDATA)>
-<!ELEMENT set       (#PCDATA)>
-<!ELEMENT program   (#PCDATA)>
-
-<!-- Days constraints -->
-<!ELEMENT days (day+)>
-<!ELEMENT day (booking+)>
+<!-- Days of the Week -->
+<!ELEMENT days (day)* >
+<!ELEMENT day  (booking)* >
 <!ATTLIST day
-        type (Monday|Tuesday|Wednesday|Thursday|Friday) #REQUIRED>
+        type (mon|tue|wed|thu|fri) #REQUIRED
+        >
 
-<!-- Periods constraints -->
-<!ELEMENT periods (period+)>
-<!ELEMENT period (booking+)>
+
+<!-- A Time-slot in a Day ( e.g. 10:30 ) -->
+<!ELEMENT periods (period)* >
+<!ELEMENT period  (booking)* >
 <!ATTLIST period
-        type (8:30-9:30|8:30-10:30|9:30-11:30|9:30-10:30|10:30-11:30|11:30-12:30|12:30-13:30|13:30-14:30|14:30-15:30|15:30-16:30|16:30-17:30) #REQUIRED>
+        time (830|930|1030|1130|1230|1330|1430|1530|1630) #REQUIRED
+        >
 
-<!-- Courses constraints -->
-<!ELEMENT courses (course+)>
-<!ELEMENT course (booking+)>
+
+<!-- A Course -->
+<!ELEMENT courses (course)* >
+<!ELEMENT course  (booking)* >
 <!ATTLIST course
-        type (BLAW3600|COMP4560|COMP4711|COMP4735|COMP4976|COMP4977) #REQUIRED>
+        code CDATA #REQUIRED
+        >
 
-<!-- Booking constraints -->
-<!ELEMENT booking (instructor?)>
-<!ELEMENT instructor (#PCDATA)>
+<!-- A Booking for a day, period and course -->
+<!ELEMENT booking EMPTY >
 <!ATTLIST booking
-        day (Monday|Tuesday|Wednesday|Thursday|Friday) #IMPLIED
-        period (8:30-9:30|8:30-10:30|9:30-11:30|9:30-10:30|10:30-11:30|11:30-12:30|12:30-13:30|12:30-14:30|13:30-14:30|14:30-15:30|15:30-16:30|16:30-17:30) #IMPLIED
-        course (BLAW3600|COMP4560|COMP4711|COMP4735|COMP4976|COMP4977) #IMPLIED
+        timeslot    (830|930|1030|1130|1230|1330|1430|1530|1630) #IMPLIED
+        dayofweek   (mon|tue|wed|thu|fri)                        #IMPLIED
+        coursename  CDATA                                        #IMPLIED
+        instructor  CDATA                                        #REQUIRED
+        room        CDATA                                        #REQUIRED
+        bookingtype CDATA                                        #REQUIRED
         >
