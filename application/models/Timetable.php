@@ -1,7 +1,5 @@
 <?php
 
-
-
 class Timetable extends CI_Model
 {
     protected $xml = null;
@@ -34,7 +32,7 @@ class Timetable extends CI_Model
 
     function initCourse() {
         foreach($this->xml->courses->course as $course) {
-            $courseCode = (string) $course["code"]
+            $courseCode = (string) $course["code"];
             foreach($course->booking as $book){
                 $instructor = (string)$book["instructor"];
                 $room = (string)$book["room"];
@@ -45,11 +43,11 @@ class Timetable extends CI_Model
         }
     }
     function initPeriod() {
-        foreach($ths->xml->periods->period as $period){
+        foreach($this->xml->periods->period as $period){
             $time = $period["time"];
             foreach($period->booking as $book){
                 $room = $book["room"];
-                $istructor = $book["instructor"];
+                $instructor = $book["instructor"];
                 $type = $book["bookingtype"];
                 $course = $book["coursename"];
                 $day = $book["dayofweek"];
@@ -133,7 +131,7 @@ class Booking extends CI_Model {
     public $instructor;
     public $day;
 
-    function __construct($istructor, $room, $type, $time,$courseName, $day)
+    function __construct($instructor, $room, $type, $time,$courseName, $day)
     {
         $this->instructor = $instructor;
         $this->room = $room;
