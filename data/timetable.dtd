@@ -18,7 +18,7 @@
 <!ELEMENT periods (period)* >
 <!ELEMENT period  (booking)* >
 <!ATTLIST period
-        time (830|930|1030|1130|1230|1330|1430|1530|1630) #REQUIRED
+        time (8:30|9:30|10:30|11:30|12:30|13:30|14:30|15:30|16:30) #REQUIRED
         >
 
 
@@ -32,7 +32,7 @@
 <!-- A Booking for a day, period and course -->
 <!ELEMENT booking EMPTY >
 <!ATTLIST booking
-        timeslot    (830|930|1030|1130|1230|1330|1430|1530|1630) #IMPLIED
+        timeslot    (8:30|9:30|10:30|11:30|12:30|13:30|14:30|15:30|16:30) #IMPLIED
         dayofweek   (mon|tue|wed|thu|fri)                        #IMPLIED
         coursename  CDATA                                        #IMPLIED
         instructor  CDATA                                        #REQUIRED

@@ -11,8 +11,8 @@ class TimetableController extends Application {
         $this->data["courses"] = $this->Timetable->getCourses();
         $this->data["periods"] = $this->Timetable->getPeriods();
 
-        $this->data['daysSearch'] = form_dropdown('day', $this->Timetable->getDaysOfWeek());
-        $this->data['periodSearch'] = form_dropdown('period', $this->Timetable->getPeriods());
+        $this->data['daysSearch'] = form_dropdown('day', $this->Timetable->getDayOfWeek());
+        $this->data['periodSearch'] = form_dropdown('period', $this->Timetable->getTimeSlot());
 
         $this->render();
     }
@@ -22,9 +22,9 @@ class TimetableController extends Application {
         $day = $this->input->post('day');
         $period = $this->input->post('period');
 
-        $bookingDay = $this->Timetable->checkDays($day,$period);
-        $bookingPeriod = $this->Timetable->checkPeriods($day,$period);
-        $bookingCourses = $this->Timetable->checkCourses($day,$period);
+        $bookingDay = $this->Timetable->searchDays($day,$period);
+        $bookingPeriod = $this->Timetable->searchPeriods($day,$period);
+        $bookingCourses = $this->Timetable->searchCourses($day,$period);
 
         $this->data["title"] = "CST Timetable (Result)";
         $this->data['pagebody'] = 'result';
@@ -52,13 +52,6 @@ class TimetableController extends Application {
             $this->data["courses"] = $this->bookingToString($bookingCourses);
         }
 
-        if($proceed && $this->Timetable->compareBooking($bookingDay,$bookingPeriod)
-            && $this->Timetable->compareBooking($bookingDay,$bookingCourses)){
-            $this->data["resultBingo"] = "BINGO";
-        } else {
-            $this->data["resultBingo"] = "No BINGO";
-        }
-
         $this->render();
     }
 
@@ -67,10 +60,8 @@ class TimetableController extends Application {
         $returnBooking = array();
         $returnBooking['day'] = (string) $booking->day;
         $returnBooking['time'] = (string) $booking->time;
-        $returnBooking['timeEnd'] = (string) $booking->timeEnd;
         $returnBooking['course'] = (string) $booking->course;
         $returnBooking['instructor'] = (string) $booking->instructor;
-        $returnBooking['building'] = (string) $booking->building;
         $returnBooking['room'] = (string) $booking->room;
         $returnBooking['type'] = (string) $booking->type;
         return array($returnBooking);
@@ -81,10 +72,8 @@ class TimetableController extends Application {
         $returnBooking = array();
         $returnBooking['day'] = "";
         $returnBooking['time'] = "";
-        $returnBooking['timeEnd'] = "";
         $returnBooking['course'] = "";
         $returnBooking['instructor'] = "";
-        $returnBooking['building'] = "";
         $returnBooking['room'] = "";
         $returnBooking['type'] = "";
         return array($returnBooking);
